@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vinext-starter",
+  "compatibility_date": "2026-02-24",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "vinext.h1n054ur.dev",
+      "custom_domain": true
+    }
+  ],
+  "main": "./worker/index.ts",
+  "assets": {
+    "not_found_handling": "none",
+    "binding": "ASSETS"
+  },
+  "images": {
+    "binding": "IMAGES"
+  }
+}
